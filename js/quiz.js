@@ -24,5 +24,7 @@ function result(correct, q_options){
         }
     }
     var r = document.getElementById("results");
-    r.innerHTML = "You scored " + window.total + " out of " + questions.length;
+    if(!r.innerHTML){
+        r.innerHTML = "You scored " + window.total + " out of " + questions.length;
+    }
 }
