@@ -13,7 +13,7 @@ header button{
     position: fixed;
     text-align: right;
     font-size: 3rem;
-    padding-left: 85%;
+    padding-left: 70%;
 }
 
 section{
@@ -25,38 +25,17 @@ section{
     font-family: Arial, Helvetica, sans-serif;
 }
 section div{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1%;
     font-weight: bold;
 }
 
-.lonea{
+.lonea, .loneb{
     display: block;
-    font-size: 1.3rem;
+    font-size: 20px;
     float: left;
     width: 90%;
-}
-
-.loneb{
-    display: block;
-    font-size: 1.3rem;
-    float: left;
-    width: 90%;
-}
-
-@media screen and (min-width: 800px){
-    section div{
-        font-size: 1.3rem;
-    }
-    .lonea{
-        display: inline-block;
-        width: 40%;
-    }
-    
-    .loneb{
-        display: inline-block;
-        width: 40%;
-    }
+    font-size: 1.5rem;
 }
 
 a{
@@ -72,4 +51,16 @@ a{
 #results{
     font-size: 1.3rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 700px){
+    section div{
+        font-size: 1.3rem;
+    }
+    .lonea, .loneb{
+        display: inline-block;
+        width: 40%;
+        font-size: 1.3rem;
+    }
+    
 }
