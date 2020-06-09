@@ -12,17 +12,50 @@
                                "optsixteenc", "optseventeend", "opteighteenc", "optnineteenb", "opttwentyc"
             ];
                 var q_options = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", 
-                                 "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"
-            ]
+                                 "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", 
+                                 "eighteen", "nineteen", "twenty"
+            ];
+                clearInterval(my);
                 result(correct, q_options);
+            }
+
+            function start(){
+                var min = document.getElementById("min");
+                var sec = document.getElementById("sec");    
+                if(sec.innerHTML == "00"){
+                    sec.innerHTML = "59";
+                    min.innerHTML -= 1;
+                }
+                else{
+                    sec.innerHTML -= 1;
+                    if(sec.innerHTML < 10){
+                        sec.innerHTML = "0" + sec.innerHTML;
+                    }
+                }
+
+                if(min.innerHTML == "0" && sec.innerHTML == "00"){
+                    helper();
+                }
+            }
+            
+            var my;
+            function myTimer(){
+                var myVar = setInterval(start, 1000);
+                window.my = myVar;
+                for(let question of document.getElementsByTagName("section")){
+                    question.style.visibility = "visible";
+                }
             }
         </script>
         <script src="js/quiz.js"></script>
     </head>
-    <body>
+    <body onload="myTimer()">
         <header>
             <h1>Math Quiz</h1>
         </header>
+        <div id="timer">
+            <span id="min">20</span><span>:</span><span id="sec">00</span>
+        </div>
         <section>
             <div>
                 Question 1:<br>(a<sup>1/n</sup>)<sup>m</sup>
