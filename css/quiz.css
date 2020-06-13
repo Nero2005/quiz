@@ -27,7 +27,6 @@ section{
 section div{
     font-size: 1.3rem;
     margin-bottom: 1%;
-    font-weight: bold;
 }
 
 .lonea, .loneb{
@@ -53,7 +52,7 @@ a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-device-width: 700px){
     section div{
         font-size: 1.3rem;
     }
