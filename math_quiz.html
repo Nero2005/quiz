@@ -51,140 +51,163 @@
     </head>
     <body onload="myTimer()">
         <header>
-            <h1>Math Quiz</h1>
+            <h1>Math Quiz</h1><br>
+            <div>
+                Answer All questions (100 points)
+            </div>
         </header>
         <div id="timer">
             <span id="min">20</span><span>:</span><span id="sec">00</span>
         </div>
         <section>
             <div>
-                Question 1:<br>(a<sup>1/n</sup>)<sup>m</sup>
+                Question 1:<br>Simplify (a<sup>1/n</sup>)<sup>m</sup>
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="one" id="optonea"
                 value="a^1/nm">a<sup>1/nm</sup></label>
             <label class="lonea"><input type="radio" name="one" id="optoneb"
-                value="a^nm">a<sup>nm</sup></label><br>
+                value="a^nm">a<sup>nm</sup></label>
             <label class="loneb"><input type="radio" name="one" id="optonec"
                 value="a^n/m">a<sup>n/m</sup></label>
             <label class="loneb"><input type="radio" name="one" id="optoned"
-                value="a^m/n">a<sup>m/n</sup></label><br>
+                value="a^m/n">a<sup>m/n</sup></label>
+            <span onclick="clear_select('one')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 2:<br>Evaluate 4<sup>1/2</sup>
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="two" id="opttwoa"
                 value="6">6</label>
             <label class="lonea"><input type="radio" name="two" id="opttwob"
-                value="8">8</label><br>
+                value="8">8</label>
             <label class="loneb"><input type="radio" name="two" id="opttwoc"
                 value="4">4</label>
             <label class="loneb"><input type="radio" name="two" id="opttwod"
-                value="2">2</label><br>
+                value="2">2</label>
+            <span onclick="clear_select('two')"><a href="#">Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 3:<br>Evaluate (-8)<sup>1/3</sup>
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="three" id="optthreea"
                 value="2">2</label>
             <label class="lonea"><input type="radio" name="three" id="optthreeb"
-                value="4">4</label><br>
+                value="4">4</label>
             <label class="loneb"><input type="radio" name="three" id="optthreec"
                 value="-2">-2</label>
             <label class="loneb"><input type="radio" name="three" id="optthreed"
-                value="-4">-4</label><br>
+                value="-4">-4</label>
+            <span onclick="clear_select('three')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 4:<br>Simplify a<sup>-r</sup>/b<sup>-s</sup>
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="four" id="optfoura"
                 value="a^r/b^s">a<sup>r</sup>/b<sup>s</sup></label>
             <label class="lonea"><input type="radio" name="four" id="optfourb"
-                value="a^s/b^r">a<sup>s</sup>/b<sup>r</sup></label><br>
+                value="a^s/b^r">a<sup>s</sup>/b<sup>r</sup></label>
             <label class="loneb"><input type="radio" name="four" id="optfourc"
                 value="b^s/a^r">b<sup>s</sup>/a<sup>r</sup></label>
             <label class="loneb"><input type="radio" name="four" id="optfourd"
-                value="b^r/a^s">b<sup>r</sup>/a<sup>s</sup></label><br>
+                value="b^r/a^s">b<sup>r</sup>/a<sup>s</sup></label>
+            <span onclick="clear_select('four')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 5:<br>Evaluate (64a<sup>6</sup>)<sup>1/6</sup>
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="five" id="optfivea"
                 value="2a">2a</label>
             <label class="lonea"><input type="radio" name="five" id="optfiveb"
-                value="|2a|">|2a|</label><br>
+                value="|2a|">|2a|</label>
             <label class="loneb"><input type="radio" name="five" id="optfivec"
                 value="-2a">-2a</label>
             <label class="loneb"><input type="radio" name="five" id="optfived"
-                value="None is correct">None is correct</label><br>
+                value="None is correct">None is correct</label>
+            <span onclick="clear_select('five')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 6:<br>Simplify &Sqrt;<sup>3</sup>&Sqrt;2
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="six" id="optsixa"
                 value="cuberoot 2"><sup>3</sup>&Sqrt;2</label>
             <label class="lonea"><input type="radio" name="six" id="optsixb"
-                value="fourthroot 2"><sup>4</sup>&Sqrt;2</label><br>
+                value="fourthroot 2"><sup>4</sup>&Sqrt;2</label>
             <label class="loneb"><input type="radio" name="six" id="optsixc"
                 value="fifthroot 2"><sup>5</sup>&Sqrt;2</label>
             <label class="loneb"><input type="radio" name="six" id="optsixd"
-                value="sixthroot 2"><sup>6</sup>&Sqrt;2</label><br>
+                value="sixthroot 2"><sup>6</sup>&Sqrt;2</label>
+            <span onclick="clear_select('six')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 7:<br>Evaluate log(1000)
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="seven" id="optsevena"
                 value="3">3</label>
             <label class="lonea"><input type="radio" name="seven" id="optsevenb"
-                value="10">10</label><br>
+                value="10">10</label>
             <label class="loneb"><input type="radio" name="seven" id="optsevenc"
                 value="30">30</label>
             <label class="loneb"><input type="radio" name="seven" id="optsevend"
-                value="100">100</label><br>
+                value="100">100</label>
+            <span onclick="clear_select('seven')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 8:<br>Simplify log<sub>7</sub>(7<sup>2x-1</sup>)
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="eight" id="opteighta"
                 value="7^2x-1">7<sup>2x-1</sup></label>
             <label class="lonea"><input type="radio" name="eight" id="opteightb"
-                value="7^2x">7<sup>2x</sup></label><br>
+                value="7^2x">7<sup>2x</sup></label>
             <label class="loneb"><input type="radio" name="eight" id="opteightc"
                 value="2x">2x</label>
             <label class="loneb"><input type="radio" name="eight" id="opteightd"
-                value="2x-1">2x-1</label><br>
+                value="2x-1">2x-1</label>
+            <span onclick="clear_select('eight')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 9:<br>Factoring: x<sup>3</sup> + x<sup>2</sup> + 3x + 3
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="nine" id="optninea"
                 value="(x+1)(x+3)">(x+1)(x+3)</label>
             <label class="lonea"><input type="radio" name="nine" id="optnineb"
-                value="(x+1)(x^2+3)">(x+1)(x<sup>2</sup>+3)</label><br>
+                value="(x+1)(x^2+3)">(x+1)(x<sup>2</sup>+3)</label>
             <label class="loneb"><input type="radio" name="nine" id="optninec"
                 value="(x+1)(2x+3)">(x+1)(2x+3)</label>
             <label class="loneb"><input type="radio" name="nine" id="optnined"
-                value="(x+3)(x^2+1)">(x+3)(x<sup>2</sup>+1)</label><br>
+                value="(x+3)(x^2+1)">(x+3)(x<sup>2</sup>+1)</label>
+            <span onclick="clear_select('nine')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 10:<br>Factoring: 2x<sup>2</sup> + 5x + 2
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="ten" id="opttena"
                 value="(2x+2)(x+1)">(2x+2)(x+1)</label>
             <label class="lonea"><input type="radio" name="ten" id="opttenb"
-                value="(x+2)(2x+1)">(x+2)(2x+1)</label><br>
+                value="(x+2)(2x+1)">(x+2)(2x+1)</label>
             <label class="loneb"><input type="radio" name="ten" id="opttenc"
                 value="(x+1)(2x+2)">(x+1)(2x+2)</label>
             <label class="loneb"><input type="radio" name="ten" id="opttend"
-                value="(x+2)(x+1)">(x+2)(x+1)</label><br>
+                value="(x+2)(x+1)">(x+2)(x+1)</label>
+            <span onclick="clear_select('ten')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
@@ -192,136 +215,156 @@
                 SSCE English (E) examination and 15 passed both Mathematics and English examinations. Find the 
                 number of those who passed neither examination.
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="eleven" id="optelevena"
                 value="10">10</label>
             <label class="lonea"><input type="radio" name="eleven" id="optelevenb"
-                value="9">9</label><br>
+                value="9">9</label>
             <label class="loneb"><input type="radio" name="eleven" id="optelevenc"
                 value="6">6</label>
             <label class="loneb"><input type="radio" name="eleven" id="optelevend"
-                value="7">7</label><br>
+                value="7">7</label>
+            <span onclick="clear_select('eleven')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 12:<br>In a certain club, all the members had either travelled to Britain (B) or USA (A) or both 
                 on holidays. If 80% have been to Britain and 60% to USA, what percentage have been to both places?
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="twelve" id="opttwelvea"
                 value="30%">30%</label>
             <label class="lonea"><input type="radio" name="twelve" id="opttwelveb"
-                value="40%">40%</label><br>
+                value="40%">40%</label>
             <label class="loneb"><input type="radio" name="twelve" id="opttwelvec"
                 value="20%">25%</label>
             <label class="loneb"><input type="radio" name="twelve" id="opttwelved"
-                value="20%">20%</label><br>
+                value="20%">20%</label>
+            <span onclick="clear_select('twelve')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 13:<br>In a certain class of 40 students, 90% passed SSCE Mathematics (M) examination, 75% passed 
                 SSCE English (E). If 2 failed both Mathematics and English, what percentage passed both examinations.
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="thirteen" id="optthirteena"
                 value="10%">10%</label>
             <label class="lonea"><input type="radio" name="thirteen" id="optthirteenb"
-                value="80%">80%</label><br>
+                value="80%">80%</label>
             <label class="loneb"><input type="radio" name="thirteen" id="optthirteenc"
                 value="70%">70%</label>
             <label class="loneb"><input type="radio" name="thirteen" id="optthirteend"
-                value="60%">60%</label><br>
+                value="60%">60%</label>
+            <span onclick="clear_select('thirteen')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 14:<br>A kitchen unit has a pre-VAT price of N80 000. What is the selling price?
                 (VAT = 5%)
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="fourteen" id="optfourteena"
                 value="84 000">84 000</label>
             <label class="lonea"><input type="radio" name="fourteen" id="optfourteenb"
-                value="90 000">90 000</label><br>
+                value="90 000">90 000</label>
             <label class="loneb"><input type="radio" name="fourteen" id="optfourteenc"
                 value="60 000">60 000</label>
             <label class="loneb"><input type="radio" name="fourteen" id="optfourteend"
-                value="70 000">70 000</label><br>
+                value="70 000">70 000</label>
+            <span onclick="clear_select('fourteen')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 15:<br>Solve the equation: x<sup>2</sup> - x - 12 = 0
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="fifteen" id="optfifteena"
                 value="x = 4">x = 4</label>
             <label class="lonea"><input type="radio" name="fifteen" id="optfifteenb"
-                value="x = -3">x = -3</label><br>
+                value="x = -3">x = -3</label>
             <label class="loneb"><input type="radio" name="fifteen" id="optfifteenc"
                 value="Both a and b are correct">Both a and b are correct</label>
             <label class="loneb"><input type="radio" name="fifteen" id="optfifteend"
-                value="Both a and b are incorrect">Both a and b are incorrect</label><br>
+                value="Both a and b are incorrect">Both a and b are incorrect</label>
+            <span onclick="clear_select('fifteen')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 16:<br>Solve the equation: (x+3)(x-4) = 8
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="sixteen" id="optsixteena"
                 value="x=3 or x=4">x=3 or x=4</label>
             <label class="lonea"><input type="radio" name="sixteen" id="optsixteenb"
-                value="x=-3 or x=4">x=-3 or x=4</label><br>
+                value="x=-3 or x=4">x=-3 or x=4</label>
             <label class="loneb"><input type="radio" name="sixteen" id="optsixteenc"
                 value="x=5 or x=-4">x=5 or x=-4</label>
             <label class="loneb"><input type="radio" name="sixteen" id="optsixteend"
-                value="x=-5 or x=4">x=-5 or x=-4</label><br>
+                value="x=-5 or x=4">x=-5 or x=-4</label>
+            <span onclick="clear_select('sixteen')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 17:<br>Solve the equation: x<sup>2</sup> - 9 = 0
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="seventeen" id="optseventeena"
                 value="x=9">x=9</label>
             <label class="lonea"><input type="radio" name="seventeen" id="optseventeenb"
-                value="x=3">x=3</label><br>
+                value="x=3">x=3</label>
             <label class="loneb"><input type="radio" name="seventeen" id="optseventeenc"
                 value="x=+-9">x=&plusmn;9</label>
             <label class="loneb"><input type="radio" name="seventeen" id="optseventeend"
-                value="x=+-3">x=&plusmn;3</label><br>
+                value="x=+-3">x=&plusmn;3</label>
+            <span onclick="clear_select('seventeen')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 18:<br>Solve the equation: (2x-1)<sup>2</sup> = 0
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="eighteen" id="opteighteena"
                 value="x=2">x=2</label>
             <label class="lonea"><input type="radio" name="eighteen" id="opteighteenb"
-                value="x=+=2">x=&plusmn;2</label><br>
+                value="x=+=2">x=&plusmn;2</label>
             <label class="loneb"><input type="radio" name="eighteen" id="opteighteenc"
                 value="x=1/2">x=1/2</label>
             <label class="loneb"><input type="radio" name="eighteen" id="opteighteend"
-                value="x=+=1/2">x=&plusmn;1/2</label><br>
+                value="x=+=1/2">x=&plusmn;1/2</label>
+            <span onclick="clear_select('eighteen')"><a>Clear Selection</a></span>
         </section>
         <section>
             <div>
                 Question 19:<br>Solve the simultaneous equation: 3x-y = 6 and 6x+5 = -23
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="nineteen" id="optnineteena"
                 value="x=1/3 and y=5">x=1/3 and y=5</label>
             <label class="lonea"><input type="radio" name="nineteen" id="optnineteenb"
-                value="x=1/3 and y=-5">x=1/3 and y=-5</label><br>
+                value="x=1/3 and y=-5">x=1/3 and y=-5</label>
             <label class="loneb"><input type="radio" name="nineteen" id="optnineteenc"
                 value="x=5 and y=1/3">x=5 and y=1/3</label>
             <label class="loneb"><input type="radio" name="nineteen" id="optnineteend"
-                value="x=5 and y=-1/3">x=5 and y=-1/3</label><br>
+                value="x=5 and y=-1/3">x=5 and y=-1/3</label>
+            <span onclick="clear_select('nineteen')"><a>Clear Selection</a></span>
         </section>
         <section>
-            <div>
+            <div id="question20">
                 Question 20:<br>Solve the simultaneous equation: 3x-y = 9 and 2y-6x = 7
             </div>
+            <span id="points">5 points</span>
             <label class="lonea"><input type="radio" name="twenty" id="opttwentya"
                 value="x=3 and y=1">x=3 and y=1</label>
             <label class="lonea"><input type="radio" name="twenty" id="opttwentyb"
-                value="x=1 and y=3">x=1 and y=3</label><br>
+                value="x=1 and y=3">x=1 and y=3</label>
             <label class="loneb"><input type="radio" name="twenty" id="opttwentyc"
                 value="The equations depend on the value of x and y">The equations depend on the value of x and y</label>
             <label class="loneb"><input type="radio" name="twenty" id="opttwentyd"
-                value="The equations are inconsistent">The equations are inconsistent</label><br>
+                value="The equations are inconsistent">The equations are inconsistent</label>
+            <span onclick="clear_select('twenty')"><a>Clear Selection</a></span>
         </section>
-        <a href="#" onclick="helper()">SUBMIT</a>
+        <a href="#" id="submit" onclick="helper()">SUBMIT</a>
 
         <div id="results"></div>
     </body>
