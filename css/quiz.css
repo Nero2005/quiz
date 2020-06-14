@@ -33,11 +33,11 @@ section{
     color: #ffffff;
     display: inline-block;
     width: 15%;
+    text-align: center;
     height: 50px;
-    font-size: 2.5rem;
-    text-align: right;
+    font-size: 1.3rem;
     margin-left: 80%;
-    padding: 1% 2% 1% 2%;
+    padding: 3.5% 2% 1% 2%;
     background-color: black;
 }
 
@@ -65,15 +65,24 @@ section div{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input[type=radio]{
+    transform: scale(2.5);
+    margin-right: 2.5%;
+}
+
 @media screen and (min-device-width: 700px){
     section div{
         font-size: 1.3rem;
-        width: 75%;
+        width: 80%;
     }
     .lonea, .loneb{
         display: inline-block;
         width: 40%;
         font-size: 1.3rem;
     }
+    input[type=radio]{
+
+    }
+
     
 }
