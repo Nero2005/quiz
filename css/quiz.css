@@ -65,7 +65,7 @@ section div{
 @media screen and (min-device-width: 700px){
     section div{
         font-size: 1.3rem;
-        width: 90%;
+        width: 75%;
     }
     .lonea, .loneb{
         display: inline-block;
